@@ -32,7 +32,7 @@ class AdresAanvuller extends Module
         $this->tab = 'front_office_features';
         $this->version = '4.1.2';
         $this->author = 'blauwfruit';
-        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => '1.7');
+        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => '8.99.99');
         $this->need_instance = 1;
         $this->bootstrap = true;
         $this->displayName = $this->l('Adresaanvuller');
@@ -547,7 +547,12 @@ class AdresAanvuller extends Module
                 "x-api-key: $APIkey"
             ),
         ));
-        return Tools::jsonDecode(curl_exec($curl));
+        
+        $response = curl_exec($curl);
+        
+        curl_close($curl);
+        
+        return json_decode($response);
     }
 
     public function filterNumber($number)

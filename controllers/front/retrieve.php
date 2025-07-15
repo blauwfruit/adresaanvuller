@@ -65,6 +65,7 @@ class AdresAanvullerRetrieveModuleFrontController extends ModuleFrontController
                 $json_response['message'] = $this->module->l('Postalcode is not correct', 'retrieve');
             }
         }
-        exit(Tools::jsonEncode($json_response));
+        
+        exit(json_encode($json_response));
     }
 }
