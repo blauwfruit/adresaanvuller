@@ -1,0 +1,75 @@
+4.1.2
+
+Bug fix: only change address format in database on option change and if address format mode option is jquery or database.
+
+4.1.1
+
+Bug fix: trimmed email addresses, variables missing when email addresses were supplied with "\n" at end 
+4.1.0
+
+- Added tests
+- Added Dutch backoffice translations
+- Email content added for incorrect
+- Removed notification option for changed address
+- Simplified sending warning
+
+4.0.5
+
+- Bug fix: filter street name from house number can leave an empty value; returns the original value when empty
+
+4.0.4
+
+- Use configured value for checking address after an order is placed
+
+4.0.3
+
+- Bug fix: prestashop.on('updatedAddressForm') only if `var prestashop` is available (in 1.7.x)
+
+4.0.2
+
+- Bug fix: prestashop.on('updatedAddressForm') implemented to target address fields
+
+4.0.1
+
+- Bug fix: switch fields with wrapper
+
+4.0.0
+
+- Address Format change options added: 1) through jQuery in the front-end, 2) though database (as before), 3) manage it yourself 
+- Bug fix: Issue with detecting form fields after changing country in delivery address form (newly loaded html by PrestaShop changes the DOM)
+
+3.1.0
+
+- Bug fix: Netherlands configurable (not relying on 13 as id_country)
+- Rebranding/name change
+
+
+3.0.1
+
+- Filters the streetname from the house number (this problem is often caused by Chrome autocomplete)
+
+3.0.1
+
+- Checks if address2 is numeric
+
+3.0.0
+
+- Added a checks after the order is placed
+- Send an email to the merchant when
+  - postcode and house number do not yield any results
+  - postcode and house number yields another address, and corrects it in the database
+  - the above prevent orders from being delivered to the wrong address
+
+2.2.0
+
+- JS variables define via Media::addJsDef function, header.tpl obsolete
+- On installation; sets proper address_format for Netherlands (iso_code NL) 
+
+2.1.3
+
+- Clean up
+
+2.1.2
+
+- Addslashes to accept selectors with " double quotes
+- Cleanup header.tpl use of addJsDef

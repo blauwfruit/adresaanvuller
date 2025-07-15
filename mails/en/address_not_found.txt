@@ -1,0 +1,11 @@
+Hi {firstname},
+
+Een afleveradres van een klant was niet correct. De bestelling kan daardoor mogelijk niet verstuurd worden.
+
+Melding: {errors}
+
+Order-ID: {id_order}
+Reference: {reference}
+Adres: {address}
+E-mail: {email}
+Telefoonnummer: {phone}

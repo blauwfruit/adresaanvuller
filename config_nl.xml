@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>adresaanvuller</name>
+	<displayName><![CDATA[Adresaanvuller]]></displayName>
+	<version><![CDATA[4.1.2]]></version>
+	<description><![CDATA[Postcode aanvuller voor Nederlandse adressen.]]></description>
+	<author><![CDATA[blauwfruit]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Weet je zeker dat je deze module wil verwijderen? De instellingen kunnen verloren gaan.]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
