@@ -30,7 +30,7 @@ class AdresAanvuller extends Module
     {
         $this->name = 'adresaanvuller';
         $this->tab = 'front_office_features';
-        $this->version = '4.1.2';
+        $this->version = '5.0.0';
         $this->author = 'blauwfruit';
         $this->ps_versions_compliancy = array('min' => '1.6', 'max' => '8.99.99');
         $this->need_instance = 1;
