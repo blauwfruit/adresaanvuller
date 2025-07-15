@@ -30,30 +30,32 @@ Modules &rarr; Module Manager &rarr; Adresaanvuller
 
 ### Prerequisites
 
-- PrestaShop 1.6 or 1.7 development environment
+- Docker and Docker Compose (recommended)
+- OR PrestaShop 1.6, 1.7 or 8.x development environment
 - PHP 7.0 or higher
 - PHPUnit for running tests
 
-### Getting Started
+### Getting Started with Docker (Recommended)
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/adresaanvuller.git
+git clone https://github.com/blauwfruit/adresaanvuller.git
 cd adresaanvuller
 ```
 
-2. Install the module in your PrestaShop development environment by copying the files to the `modules/adresaanvuller/` directory.
-
-3. Enable the module in your PrestaShop admin panel.
-
-### Running Tests
-
-The module includes PHPUnit tests to ensure functionality:
-
+2. Start the development environment
 ```bash
-# Run tests from the PrestaShop root directory
-php vendor/bin/phpunit modules/adresaanvuller/tests/
+docker-compose up -d
 ```
+
+   Or specify a different PrestaShop version:
+```bash
+TAG=1.7-apache docker-compose up -d
+```
+
+3. Access PrestaShop at `http://localhost` and complete the installation
+
+4. The module will be available in the modules directory and can be installed from the admin panel
 
 ### Development Guidelines
 
